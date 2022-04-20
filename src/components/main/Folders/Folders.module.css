@@ -1,0 +1,12 @@
+
+.main_folder {
+  @apply border m-1 rounded-xl px-3 py-1 bg-slate-100 hover:bg-slate-200 transition-colors duration-100 cursor-pointer overflow-hidden text-ellipsis
+}
+
+.custom_folder {
+  @apply border m-1 rounded-r-xl px-3 w-11/12 py-1  bg-slate-100 hover:bg-slate-200 cursor-pointer overflow-hidden text-ellipsis
+}
+
+.active {
+  @apply bg-green-400 hover:bg-green-400
+}

@@ -1,10 +1,13 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import activeFolderReducer from './activeFolder/activeFolder.slice';
+
+
+const reducer = {
+  activeFolder: activeFolderReducer
+}
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer
 });
 
 export type AppDispatch = typeof store.dispatch;
