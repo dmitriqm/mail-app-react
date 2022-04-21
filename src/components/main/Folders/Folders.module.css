@@ -3,10 +3,22 @@
   @apply border m-1 rounded-xl px-3 py-1 bg-slate-100 hover:bg-slate-200 transition-colors duration-100 cursor-pointer overflow-hidden text-ellipsis
 }
 
-.custom_folder {
-  @apply border m-1 rounded-r-xl px-3 w-11/12 py-1  bg-slate-100 hover:bg-slate-200 cursor-pointer overflow-hidden text-ellipsis
+.custom_folder__wrapper {
+  @apply h-fit m-1 w-11/12 bg-slate-200 rounded-xl
 }
 
+.custom_folder {
+  @apply border rounded-r-xl px-3 flex justify-between items-center py-1 bg-slate-100 hover:bg-slate-200 cursor-pointer overflow-hidden text-ellipsis
+}
+
+.custom_folder__buttons {
+  @apply hidden items-center 
+}
+
+.custom_folder:hover .custom_folder__buttons {
+  @apply flex
+} 
+
 .active {
-  @apply bg-green-400 hover:bg-green-400
+  @apply bg-green-400 hover:bg-green-400 border-green-400
 }
