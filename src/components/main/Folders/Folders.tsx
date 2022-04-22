@@ -3,7 +3,7 @@ import CustomFolders from './CustomFolders'
 
 const Folders = () => {
   return (
-    <section className="border rounded-xl flex-shrink-0 w-52 h-full mr-2">
+    <section className="border rounded-xl flex-shrink-0 w-52 mr-2">
       <MainFolders />
       <CustomFolders />
     </section>)
